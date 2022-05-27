@@ -34,7 +34,7 @@ router.get('/items', (req, res) => {
 //downloaded postman to test out post request
 //http://localhost:3000/ to test post route 
 router.post('/', (req, res) => {    
-   const item = req.body; //items/objects  will be stored in body with this variable
+   let item = req.body; //items/objects  will be stored in body with this variable
 
   // const itemID = uuidv4() //adding id to database
    //const itemWithID = {...cubbyItems, id: uuidv4()} //assigning all objects or items an itemID 

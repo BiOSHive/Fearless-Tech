@@ -10,7 +10,7 @@ const router = express.Router();
 //these objects will not be stored its a mock database 
 //going to make database empty to add items to it, for testing purposes, 
 //i would remove this for production
-let cubbyItems = [
+const cubbyItems = [
     // {
     //     childsName: "Mikayla",
     //     itemName: "Diapers",
@@ -57,16 +57,9 @@ router.get('/:id', (req, res) => {
 });
 
 //deleting an item by id 
-router.delete('/:id', (req, res) => {
+router.delete('./:id', (req, res) => {
     const { id } = req.params;
 
-    //meisha 123 id, id to delete is equal to 123 then it will delete that item/cubby
-
-    //filtering array 
-    //if true it will keep item in the array, if it is false it will remove item from array 
-    cubbyItems = cubbyItems.filter((item) => item.id != id);
-
-    res.send(`item with the id ${id} was deleted from the database`)
 })
 
 //export so that i can use in index.js file 

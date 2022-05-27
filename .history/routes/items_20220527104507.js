@@ -57,14 +57,14 @@ router.get('/:id', (req, res) => {
 });
 
 //deleting an item by id 
-router.delete('/:id', (req, res) => {
+router.delete('./:id', (req, res) => {
     const { id } = req.params;
 
     //meisha 123 id, id to delete is equal to 123 then it will delete that item/cubby
 
     //filtering array 
     //if true it will keep item in the array, if it is false it will remove item from array 
-    cubbyItems = cubbyItems.filter((item) => item.id != id);
+    c = item.filter((item) => items.id !== id);
 
     res.send(`item with the id ${id} was deleted from the database`)
 })

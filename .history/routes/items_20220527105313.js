@@ -64,7 +64,7 @@ router.delete('/:id', (req, res) => {
 
     //filtering array 
     //if true it will keep item in the array, if it is false it will remove item from array 
-    cubbyItems = cubbyItems.filter((item) => item.id != id);
+    cubbyItems = cubbyItems.filter((itemf) => item.id != id);
 
     res.send(`item with the id ${id} was deleted from the database`)
 })
