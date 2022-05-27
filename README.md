@@ -60,3 +60,25 @@ inside postman download version(not web)
  * to see the data that is currently in the running application change to GET and make sure the url says: http://localhost:3000/items, 
  *then hit send to see data 
  
+ ## *To update items in the database you we need to use PATCH 
+- make sure you run npm start if you have to restart your app
+- change to PATCH in postman app
+- make sure url is: http://localhost:3000/items/ 'enter object id here'
+
+*getting object id:
+- run GET with url as: http://localhost:3000/items
+- copy item/object id 
+- change to PATCH with url as: http://localhost:3000/53993d39-bb0d-4a1b-bcd1-dbe99409b020 
+ *note: that the id number on the end should be based on the id number you copy from runnnig the GET function and copying an items ID
+- update the middle window with only the objects you want to update.
+- hit send
+- once its successful you will see this message: "User with id: 53993d39-bb0d-4a1b-bcd1-dbe99409b020, has been updated."
+ 
+## FUTURE UPDATES AND CHANGES
+*ASSUMPTIONS THAT MAY AFFECT THE CHANGES TO COME
+- will build out the frontend using HTML, CSS with react 
+- making these changes may require I change or update the routes and controllers folder, the functions and add in new files and modules
+
+
+##CODE ERRORS TO BE FIXED
+*Docker file path 
