@@ -1,0 +1,142 @@
+{
+    "sourceFile": "SOLUTION.md",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 31,
+            "patches": [
+                {
+                    "date": 1653678215590,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1653678245545,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,8 +59,9 @@\n  once you change the json data info hit send again. \n  * to see the data that is currently in the running application change to GET and make sure the url says: http://localhost:3000/items, \n  *then hit send to see data \n  \n+## *To add items in a database you we need to use POST \n \n+\n  \n  \n- \n"
+                },
+                {
+                    "date": 1653678252377,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,9 +59,9 @@\n  once you change the json data info hit send again. \n  * to see the data that is currently in the running application change to GET and make sure the url says: http://localhost:3000/items, \n  *then hit send to see data \n  \n-## *To add items in a database you we need to use POST \n+## *To update items in the database you we need to use POST \n \n \n  \n  \n"
+                },
+                {
+                    "date": 1653678257724,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,9 +59,9 @@\n  once you change the json data info hit send again. \n  * to see the data that is currently in the running application change to GET and make sure the url says: http://localhost:3000/items, \n  *then hit send to see data \n  \n-## *To update items in the database you we need to use POST \n+## *To update items in the database you we need to use PATCH \n \n \n  \n  \n"
+                },
+                {
+                    "date": 1653678269295,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,8 +60,8 @@\n  * to see the data that is currently in the running application change to GET and make sure the url says: http://localhost:3000/items, \n  *then hit send to see data \n  \n ## *To update items in the database you we need to use PATCH \n+- make sure you change to PATCH\n \n-\n  \n  \n"
+                },
+                {
+                    "date": 1653678328894,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,7 +61,8 @@\n  *then hit send to see data \n  \n ## *To update items in the database you we need to use PATCH \n - make sure you change to PATCH\n+- \n \n  \n  \n"
+                },
+                {
+                    "date": 1653678342714,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,9 +60,9 @@\n  * to see the data that is currently in the running application change to GET and make sure the url says: http://localhost:3000/items, \n  *then hit send to see data \n  \n ## *To update items in the database you we need to use PATCH \n-- make sure you change to PATCH\n+- make sure you run npm start if you have to restart your \n - \n \n  \n  \n"
+                },
+                {
+                    "date": 1653678350710,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,9 +60,9 @@\n  * to see the data that is currently in the running application change to GET and make sure the url says: http://localhost:3000/items, \n  *then hit send to see data \n  \n ## *To update items in the database you we need to use PATCH \n-- make sure you run npm start if you have to restart your \n+- make sure you run npm start if you have to restart your app\n - \n \n  \n  \n"
+                },
+                {
+                    "date": 1653678362690,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,8 +61,8 @@\n  *then hit send to see data \n  \n ## *To update items in the database you we need to use PATCH \n - make sure you run npm start if you have to restart your app\n-- \n+- change to PATCH in postman\n \n  \n  \n"
+                },
+                {
+                    "date": 1653678368329,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,8 +61,9 @@\n  *then hit send to see data \n  \n ## *To update items in the database you we need to use PATCH \n - make sure you run npm start if you have to restart your app\n-- change to PATCH in postman\n+- change to PATCH in postman app\n+-\n \n  \n  \n"
+                },
+                {
+                    "date": 1653678373373,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,8 +62,8 @@\n  \n ## *To update items in the database you we need to use PATCH \n - make sure you run npm start if you have to restart your app\n - change to PATCH in postman app\n--\n+-make sure url is: \n \n  \n  \n"
+                },
+                {
+                    "date": 1653678458976,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,8 +62,8 @@\n  \n ## *To update items in the database you we need to use PATCH \n - make sure you run npm start if you have to restart your app\n - change to PATCH in postman app\n--make sure url is: \n+-make sure url is: http://localhost:3000/\n \n  \n  \n"
+                },
+                {
+                    "date": 1653678464515,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,8 +62,8 @@\n  \n ## *To update items in the database you we need to use PATCH \n - make sure you run npm start if you have to restart your app\n - change to PATCH in postman app\n--make sure url is: http://localhost:3000/\n+-make sure url is: http://localhost:3000/items/\"\n \n  \n  \n"
+                },
+                {
+                    "date": 1653678470895,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,8 +62,8 @@\n  \n ## *To update items in the database you we need to use PATCH \n - make sure you run npm start if you have to restart your app\n - change to PATCH in postman app\n--make sure url is: http://localhost:3000/items/\"\n+-make sure url is: http://localhost:3000/items/ '\n \n  \n  \n"
+                },
+                {
+                    "date": 1653678478259,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,8 +62,8 @@\n  \n ## *To update items in the database you we need to use PATCH \n - make sure you run npm start if you have to restart your app\n - change to PATCH in postman app\n--make sure url is: http://localhost:3000/items/ '\n+-make sure url is: http://localhost:3000/items/ 'enter object id here'\n \n  \n  \n"
+                },
+                {
+                    "date": 1653678489020,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,6 +64,7 @@\n - make sure you run npm start if you have to restart your app\n - change to PATCH in postman app\n -make sure url is: http://localhost:3000/items/ 'enter object id here'\n \n+*getting object id:\n  \n  \n"
+                },
+                {
+                    "date": 1653678502297,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,6 +65,7 @@\n - change to PATCH in postman app\n -make sure url is: http://localhost:3000/items/ 'enter object id here'\n \n *getting object id:\n+-run GET \n  \n  \n"
+                },
+                {
+                    "date": 1653678510194,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,7 +65,7 @@\n - change to PATCH in postman app\n -make sure url is: http://localhost:3000/items/ 'enter object id here'\n \n *getting object id:\n--run GET \n+-run GET with url as: \n  \n  \n"
+                },
+                {
+                    "date": 1653678516180,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,7 +65,7 @@\n - change to PATCH in postman app\n -make sure url is: http://localhost:3000/items/ 'enter object id here'\n \n *getting object id:\n--run GET with url as: \n+-run GET with url as: http://localhost:3000/items\n  \n  \n"
+                },
+                {
+                    "date": 1653678532768,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,6 +66,7 @@\n -make sure url is: http://localhost:3000/items/ 'enter object id here'\n \n *getting object id:\n -run GET with url as: http://localhost:3000/items\n+-copy \n  \n  \n"
+                },
+                {
+                    "date": 1653678538647,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,7 +66,7 @@\n -make sure url is: http://localhost:3000/items/ 'enter object id here'\n \n *getting object id:\n -run GET with url as: http://localhost:3000/items\n--copy \n+-copy item/object id \n  \n  \n"
+                },
+                {
+                    "date": 1653678547014,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -67,6 +67,7 @@\n \n *getting object id:\n -run GET with url as: http://localhost:3000/items\n -copy item/object id \n+- change to PATCH\n  \n  \n"
+                },
+                {
+                    "date": 1653678603591,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -67,7 +67,7 @@\n \n *getting object id:\n -run GET with url as: http://localhost:3000/items\n -copy item/object id \n-- change to PATCH\n+- change to PATCH with url as: http://localhost:3000/53993d39-bb0d-4a1b-bcd1-dbe99409b020\n  \n  \n"
+                },
+                {
+                    "date": 1653678609371,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -67,7 +67,8 @@\n \n *getting object id:\n -run GET with url as: http://localhost:3000/items\n -copy item/object id \n-- change to PATCH with url as: http://localhost:3000/53993d39-bb0d-4a1b-bcd1-dbe99409b020\n+- change to PATCH with url as: http://localhost:3000/53993d39-bb0d-4a1b-bcd1-dbe99409b020 \n+\n  \n  \n"
+                },
+                {
+                    "date": 1653678623547,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -68,7 +68,7 @@\n *getting object id:\n -run GET with url as: http://localhost:3000/items\n -copy item/object id \n - change to PATCH with url as: http://localhost:3000/53993d39-bb0d-4a1b-bcd1-dbe99409b020 \n-\n+*note: that the id number on the end should be based on \n  \n  \n"
+                },
+                {
+                    "date": 1653678635277,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -68,7 +68,7 @@\n *getting object id:\n -run GET with url as: http://localhost:3000/items\n -copy item/object id \n - change to PATCH with url as: http://localhost:3000/53993d39-bb0d-4a1b-bcd1-dbe99409b020 \n-*note: that the id number on the end should be based on \n+*note: that the id number on the end should be based on the id number you copy from runnnig the GET \n  \n  \n"
+                },
+                {
+                    "date": 1653678642803,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -68,7 +68,7 @@\n *getting object id:\n -run GET with url as: http://localhost:3000/items\n -copy item/object id \n - change to PATCH with url as: http://localhost:3000/53993d39-bb0d-4a1b-bcd1-dbe99409b020 \n-*note: that the id number on the end should be based on the id number you copy from runnnig the GET \n+*note: that the id number on the end should be based on the id number you copy from runnnig the GET function and copying an items ID\n  \n  \n"
+                },
+                {
+                    "date": 1653678659082,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -69,6 +69,8 @@\n -run GET with url as: http://localhost:3000/items\n -copy item/object id \n - change to PATCH with url as: http://localhost:3000/53993d39-bb0d-4a1b-bcd1-dbe99409b020 \n *note: that the id number on the end should be based on the id number you copy from runnnig the GET function and copying an items ID\n+\n+-once its successful you will see this message: \n  \n  \n"
+                },
+                {
+                    "date": 1653678666319,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -70,7 +70,7 @@\n -copy item/object id \n - change to PATCH with url as: http://localhost:3000/53993d39-bb0d-4a1b-bcd1-dbe99409b020 \n *note: that the id number on the end should be based on the id number you copy from runnnig the GET function and copying an items ID\n \n--once its successful you will see this message: \n+-once its successful you will see this message: User with id: 53993d39-bb0d-4a1b-bcd1-dbe99409b020, has been updated.\n  \n  \n"
+                },
+                {
+                    "date": 1653678672557,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -70,7 +70,7 @@\n -copy item/object id \n - change to PATCH with url as: http://localhost:3000/53993d39-bb0d-4a1b-bcd1-dbe99409b020 \n *note: that the id number on the end should be based on the id number you copy from runnnig the GET function and copying an items ID\n \n--once its successful you will see this message: User with id: 53993d39-bb0d-4a1b-bcd1-dbe99409b020, has been updated.\n+-once its successful you will see this message: \"User with id: 53993d39-bb0d-4a1b-bcd1-dbe99409b020, has been updated.\"\n  \n  \n"
+                },
+                {
+                    "date": 1653678734451,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -69,8 +69,9 @@\n -run GET with url as: http://localhost:3000/items\n -copy item/object id \n - change to PATCH with url as: http://localhost:3000/53993d39-bb0d-4a1b-bcd1-dbe99409b020 \n *note: that the id number on the end should be based on the id number you copy from runnnig the GET function and copying an items ID\n+-update the middle window with only the object items you want to update.\n \n -once its successful you will see this message: \"User with id: 53993d39-bb0d-4a1b-bcd1-dbe99409b020, has been updated.\"\n  \n  \n"
+                },
+                {
+                    "date": 1653678740159,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -69,9 +69,10 @@\n -run GET with url as: http://localhost:3000/items\n -copy item/object id \n - change to PATCH with url as: http://localhost:3000/53993d39-bb0d-4a1b-bcd1-dbe99409b020 \n *note: that the id number on the end should be based on the id number you copy from runnnig the GET function and copying an items ID\n--update the middle window with only the object items you want to update.\n+-update the middle window with only the objects you want to update.\n+-\n \n -once its successful you will see this message: \"User with id: 53993d39-bb0d-4a1b-bcd1-dbe99409b020, has been updated.\"\n  \n  \n"
+                }
+            ],
+            "date": 1653678215590,
+            "name": "Commit-0",
+            "content": "# Fearless-Tech-PurpleCowProject\n\n*** I CREATED A BACKEND DATABASE FOR A FUTRUE WEBSITE & APP ***\n\n\n# ********** HOW TO RUN THE FILE **********\n ## **on a MAC: \n- download zip folder from GitHub - PurpleCowProject \n- open zip folder with IDE (like VSCode) \n- click on index.js file \n- open terminal in vscode\n- Run the following command in the terminal: npm start \n*this will start the file https://localhost:3000 *\n\n- click or copy and past http://localhost:3000 into your web browser (any browser is fine, chrome or safari) \n- you should see the follow message to let you know you have successfully launched the browser: \" Welcome to the Purple Cow project!\" \n\n\n# ** LETS ADD USER DATA**\n*THIS IS A MOCK DATABASE for time purposes a real database will be built out later \n*WE WILL USE www.postman.com download version (not web) to add, update, read and remove items from the mock database*\n\n- download postman.com to update remove and add items to the database \n- we will use the get() function to retrieve items to the array \n- we will use the post() function to add items to the array \n- we will use delete() function to remove items \n\n# ** USING POSTMAN TO NAVIGATE THE MOCK DATABASE \ninside postman download version(not web) \n\n## **To read objects in the database...using GET\n- make sure your tab is on GET \n- you select params tab \n- make sure your terminal has local host running \n- copy localhost path https://localhost:3000  into the url box inside postman\n- hit send button\n\n* you should see below in the body window that it says Welcome to purple cow project \n\n## *To add items in a database you we need to use POST \n- select POST \n- make sure url says the following: http://localhost:3000/\n- select body\n- select raw from the drop down\n- text type should be json \n\n**add the following sample json data to the middle window: \n{\n    \"childsName\": \"Mikayla\",\n    \"itemName\" : \"blocks\",\n    \"quantity\": 10\n}\n\n- you should see the following message below after you hit send to add the object to the database: \n\"Yay! Mikayla cubby has been updated. Mikayla has 10 blocks in the database cubby\"\n\n- you can add this json data as many times as you want.\n changing the text within the \" \" to the right of the : is okay, changing the number is okay as well. \n once you change the json data info hit send again. \n * to see the data that is currently in the running application change to GET and make sure the url says: http://localhost:3000/items, \n *then hit send to see data \n \n\n \n \n \n"
+        }
+    ]
+}
