@@ -79,3 +79,6 @@ inside postman download version(not web)
 - will build out the frontend using HTML, CSS with react 
 - making these changes may require I change or update the routes and controllers folder, the functions and add in new files and modules
 
+
+##CODE ERRORS TO BE FIXED
+*Docker file path 
