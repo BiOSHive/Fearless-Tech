@@ -1,0 +1,106 @@
+{
+    "sourceFile": "DockerFile",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 22,
+            "patches": [
+                {
+                    "date": 1653670191903,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1653670197102,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-FROM\n\\ No newline at end of file\n+FROM node: latest\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1653670203079,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,3 @@\n-FROM node: latest\n\\ No newline at end of file\n+FROM node: latest\n+\n+RUN\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1653670208692,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n FROM node: latest\n \n-RUN\n\\ No newline at end of file\n+RUN mkdir -p /\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1653670215021,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n FROM node: latest\n \n-RUN mkdir -p /\n\\ No newline at end of file\n+RUN mkdir -p /user/src/app\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1653670220252,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,5 @@\n FROM node: latest\n \n-RUN mkdir -p /user/src/app\n\\ No newline at end of file\n+RUN mkdir -p /user/src/app\n+\n+WORKDIR\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1653670229721,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n FROM node: latest\n \n RUN mkdir -p /user/src/app\n \n-WORKDIR\n\\ No newline at end of file\n+WORKDIR /user\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1653670237078,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n FROM node: latest\n \n RUN mkdir -p /user/src/app\n \n-WORKDIR /user\n\\ No newline at end of file\n+WORKDIR /usr/src\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1653670243541,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n FROM node: latest\n \n-RUN mkdir -p /user/src/app\n+RUN mkdir -p /usr/src/app\n \n\\ No newline at end of file\n-WORKDIR /usr/src\n+WORKDIR /usr/src/app\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1653670249095,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,7 @@\n FROM node: latest\n \n RUN mkdir -p /usr/src/app\n \n-WORKDIR /usr/src/app\n\\ No newline at end of file\n+WORKDIR /usr/src/app\n+\n+COPY \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1653670261246,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,5 +3,5 @@\n RUN mkdir -p /usr/src/app\n \n WORKDIR /usr/src/app\n \n-COPY \n\\ No newline at end of file\n+COPY package\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1653670267486,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,5 +3,5 @@\n RUN mkdir -p /usr/src/app\n \n WORKDIR /usr/src/app\n \n-COPY package\n\\ No newline at end of file\n+COPY package.json /usr/\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1653670274626,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,5 +3,7 @@\n RUN mkdir -p /usr/src/app\n \n WORKDIR /usr/src/app\n \n-COPY package.json /usr/\n\\ No newline at end of file\n+COPY package.json /usr/src/app/\n+\n+RUN \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1653670281884,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,5 +5,5 @@\n WORKDIR /usr/src/app\n \n COPY package.json /usr/src/app/\n \n-RUN \n\\ No newline at end of file\n+RUN npm install\n"
+                },
+                {
+                    "date": 1653670288245,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,4 +6,6 @@\n \n COPY package.json /usr/src/app/\n \n RUN npm install\n+\n+COPY . /usr/\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1653670293693,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,5 +7,5 @@\n COPY package.json /usr/src/app/\n \n RUN npm install\n \n-COPY . /usr/\n\\ No newline at end of file\n+COPY . /usr/src/app\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1653670300904,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,5 +7,7 @@\n COPY package.json /usr/src/app/\n \n RUN npm install\n \n-COPY . /usr/src/app\n\\ No newline at end of file\n+COPY . /usr/src/app\n+\n+EXPOSE\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1653670324177,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,5 +9,5 @@\n RUN npm install\n \n COPY . /usr/src/app\n \n-EXPOSE\n\\ No newline at end of file\n+EXPOSE 3000\n"
+                },
+                {
+                    "date": 1653670330752,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,4 +10,6 @@\n \n COPY . /usr/src/app\n \n EXPOSE 3000\n+\n+CMD []\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1653670337865,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,5 +11,5 @@\n COPY . /usr/src/app\n \n EXPOSE 3000\n \n-CMD []\n\\ No newline at end of file\n+CMD [\"npm\", \"start\"]\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1653670390586,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-FROM node: latest\n+FROM node: \n \n RUN mkdir -p /usr/src/app\n \n WORKDIR /usr/src/app\n@@ -11,5 +11,5 @@\n COPY . /usr/src/app\n \n EXPOSE 3000\n \n-CMD [\"npm\", \"start\"]\n\\ No newline at end of file\n+CMD [ \"npm\", \"start\" ]\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1653670398813,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-FROM node: \n+FROM node: index.js\n \n RUN mkdir -p /usr/src/app\n \n WORKDIR /usr/src/app\n"
+                },
+                {
+                    "date": 1653670406622,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-FROM node: index.js\n+FROM node: \n \n RUN mkdir -p /usr/src/app\n \n WORKDIR /usr/src/app\n"
+                }
+            ],
+            "date": 1653670191902,
+            "name": "Commit-0",
+            "content": "FROM"
+        }
+    ]
+}
