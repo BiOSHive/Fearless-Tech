@@ -1,6 +1,6 @@
 FROM node:15
 
-WORKDIR /FearlessTech
+WORKDIR /Desktop/Fearless Tech
 
 COPY package.json .
 

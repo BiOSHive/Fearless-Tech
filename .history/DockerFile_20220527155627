@@ -1,6 +1,7 @@
 FROM node:15
 
-WORKDIR /FearlessTech
+RUN mkdir -p /user/src/app
+WORKDIR 
 
 COPY package.json .
 

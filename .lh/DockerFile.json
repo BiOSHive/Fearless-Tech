@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 46,
+            "activePatchIndex": 54,
             "patches": [
                 {
                     "date": 1653670191903,
@@ -192,6 +192,38 @@
                 {
                     "date": 1653676659861,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n FROM node:15\n \n-WORKDIR /FearlessTech\n+WORKDIR /app\n \n COPY package.json .\n \n RUN npm install\n"
+                },
+                {
+                    "date": 1653680739107,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n FROM node:15\n \n-WORKDIR /app\n+WORKDIR /appclear\n \n+\n COPY package.json .\n \n RUN npm install\n \n"
+                },
+                {
+                    "date": 1653680946372,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,8 @@\n FROM node:15\n \n-WORKDIR /appclear\n+WORKDIR /dockerfile\n \n-\n COPY package.json .\n \n RUN npm install\n \n"
+                },
+                {
+                    "date": 1653680958400,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n FROM node:15\n \n-WORKDIR /dockerfile\n+WORKDIR /fearlesstech\n \n COPY package.json .\n \n RUN npm install\n"
+                },
+                {
+                    "date": 1653681050066,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n FROM node:15\n \n-WORKDIR /fearlesstech\n+WORKDIR DockerFile\n \n COPY package.json .\n \n RUN npm install\n"
+                },
+                {
+                    "date": 1653681205440,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n FROM node:15\n \n-WORKDIR DockerFile\n+WORKDIR \n \n COPY package.json .\n \n RUN npm install\n"
+                },
+                {
+                    "date": 1653681212695,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n FROM node:15\n \n-WORKDIR \n+WORKDIR /\n \n COPY package.json .\n \n RUN npm install\n"
+                },
+                {
+                    "date": 1653681283496,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n FROM node:15\n \n-WORKDIR /\n+WORKDIR /App\n \n COPY package.json .\n \n RUN npm install\n"
+                },
+                {
+                    "date": 1653681290897,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n FROM node:15\n \n-WORKDIR /A\n+WORKDIR /\n \n COPY package.json .\n \n RUN npm install\n"
                 }
             ],
             "date": 1653670191902,

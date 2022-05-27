@@ -1,6 +1,7 @@
 FROM node:15
+MKDIR 
 
-WORKDIR /FearlessTech
+WORKDIR 
 
 COPY package.json .
 
