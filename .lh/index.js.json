@@ -1,0 +1,322 @@
+{
+    "sourceFile": "index.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 76,
+            "patches": [
+                {
+                    "date": 1653594147667,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1653594246618,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,2 @@\n //using express inside this file \n+//npm install --save express in terminal \n"
+                },
+                {
+                    "date": 1653594272317,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,3 @@\n //using express inside this file \n-//npm install --save express in terminal \n+//npm install --save express (in terminal )\n+import express from 'express'\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1653594352323,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,4 @@\n //using express inside this file \n //npm install --save express (in terminal )\n-import express from 'express'\n\\ No newline at end of file\n+import express from 'express';\n+imp\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1653594359659,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n //using express inside this file \n //npm install --save express (in terminal )\n import express from 'express';\n-imp\n\\ No newline at end of file\n+import bodyParser from 'body-parser';\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1653594390573,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,8 @@\n //using express inside this file \n //npm install --save express (in terminal )\n import express from 'express';\n-import bodyParser from 'body-parser';\n\\ No newline at end of file\n+import bodyParser from 'body-parser';\n+\n+\n+//initial express app\n+const app = express();\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1653594406635,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,5 +4,8 @@\n import bodyParser from 'body-parser';\n \n \n //initial express app\n-const app = express();\n\\ No newline at end of file\n+const app = express();\n+\n+//specify port of app \n+const PORT \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1653594412488,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,5 +7,6 @@\n //initial express app\n const app = express();\n \n //specify port of app \n-const PORT \n\\ No newline at end of file\n+const PORT = 3000;\n+\n"
+                },
+                {
+                    "date": 1653594422725,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,4 +9,5 @@\n \n //specify port of app \n const PORT = 3000;\n \n+app.use(bodyParser.json)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1653594434233,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,5 +9,5 @@\n \n //specify port of app \n const PORT = 3000;\n \n-app.use(bodyParser.json)\n\\ No newline at end of file\n+app.use(bodyParser.json()) //this says that \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1653594441270,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,5 +9,5 @@\n \n //specify port of app \n const PORT = 3000;\n \n-app.use(bodyParser.json()) //this says that \n\\ No newline at end of file\n+app.use(bodyParser.json()) //this says that use json data within the body of the app \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1653594493676,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,5 +9,6 @@\n \n //specify port of app \n const PORT = 3000;\n \n+/this says that use json data within the body of the app \n app.use(bodyParser.json()) //this says that use json data within the body of the app \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1653594500551,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,6 +9,6 @@\n \n //specify port of app \n const PORT = 3000;\n \n-/this says that use json data within the body of the app \n-app.use(bodyParser.json()) //this says that use json data within the body of the app \n\\ No newline at end of file\n+//this says that use json data within the body of the app \n+app.use(bodyParser.json()) \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1653594511959,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,5 +10,6 @@\n //specify port of app \n const PORT = 3000;\n \n //this says that use json data within the body of the app \n-app.use(bodyParser.json()) \n\\ No newline at end of file\n+app.use(bodyParser.json())\n+\n"
+                },
+                {
+                    "date": 1653594519579,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,4 +12,5 @@\n \n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n+//tell it to listen \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1653594528012,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,5 +12,6 @@\n \n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n-//tell it to listen \n\\ No newline at end of file\n+//tell it to listen \n+app.isten\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1653594533552,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,5 +13,5 @@\n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n //tell it to listen \n-app.isten\n\\ No newline at end of file\n+app.listen(port)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1653594538652,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,5 +13,5 @@\n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n //tell it to listen \n-app.listen(port)\n\\ No newline at end of file\n+app.listen(PORT, ())\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1653594547680,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,5 +13,7 @@\n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n //tell it to listen \n-app.listen(PORT, ())\n\\ No newline at end of file\n+app.listen(PORT, () => {\n+    \n+})\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1653594571983,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,7 +13,5 @@\n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n //tell it to listen \n-app.listen(PORT, () => {\n-    \n-})\n\\ No newline at end of file\n+app.listen(PORT, () =)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1653594577249,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,5 +13,5 @@\n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n //tell it to listen \n-app.listen(PORT, () =)\n\\ No newline at end of file\n+app.listen(PORT, () => console.log())\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1653594839322,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,5 +13,5 @@\n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n //tell it to listen \n-app.listen(PORT, () => console.log())\n\\ No newline at end of file\n+app.listen(PORT, () => console.log('Server is running on '))\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1653594849147,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,5 +13,5 @@\n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n //tell it to listen \n-app.listen(PORT, () => console.log('Server is running on '))\n\\ No newline at end of file\n+app.listen(PORT, () => console.log('Server is running on port: http://localhosr'))\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1653594855603,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,5 +13,5 @@\n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n //tell it to listen \n-app.listen(PORT, () => console.log('Server is running on port: http://localhosr'))\n\\ No newline at end of file\n+app.listen(PORT, () => console.log('Server is running on port: http://localhosr${}'))\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1653594864356,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,5 +13,5 @@\n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n //tell it to listen \n-app.listen(PORT, () => console.log('Server is running on port: http://localhosr${}'))\n\\ No newline at end of file\n+app.listen(PORT, () => console.log('Server is running on port: http://localhosr${PORt}'))\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1653594871371,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,5 +13,5 @@\n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n //tell it to listen \n-app.listen(PORT, () => console.log('Server is running on port: http://localhosr${PORt}'))\n\\ No newline at end of file\n+app.listen(PORT, () => console.log('Server is running on port: http://localhos${PORT}'))\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1653594892975,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,5 +13,5 @@\n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n //tell it to listen \n-app.listen(PORT, () => console.log('Server is running on port: http://localhos${PORT}'))\n\\ No newline at end of file\n+app.listen(PORT, () => console.log(Server is running on port: http://localhost:${PORT}'))\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1653594898644,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,5 +13,5 @@\n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n //tell it to listen \n-app.listen(PORT, () => console.log(Server is running on port: http://localhost:${PORT}'))\n\\ No newline at end of file\n+app.listen(PORT, () => console.log(`Server is running on port: http://localhost:${PORT}))\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1653594922311,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,6 +12,6 @@\n \n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n-//tell it to listen \n-app.listen(PORT, () => console.log(`Server is running on port: http://localhost:${PORT}))\n\\ No newline at end of file\n+//tell it to listen on port 3000, use back tics for te\n+app.listen(PORT, () => console.log(`Server is running on port: http://localhost:${PORT}`))\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1653594974717,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,6 +12,8 @@\n \n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n-//tell it to listen on port 3000, use back tics for te\n-app.listen(PORT, () => console.log(`Server is running on port: http://localhost:${PORT}`))\n\\ No newline at end of file\n+//tell it to listen on port 3000, use back tics for temp string\n+app.listen(PORT, () => console.log(`Server is running on port: http://localhost:${PORT}`))\n+\n+\n"
+                },
+                {
+                    "date": 1653594985557,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,5 +15,5 @@\n \n //tell it to listen on port 3000, use back tics for temp string\n app.listen(PORT, () => console.log(`Server is running on port: http://localhost:${PORT}`))\n \n-\n+//install nodemod \n"
+                },
+                {
+                    "date": 1653595001258,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,5 +15,6 @@\n \n //tell it to listen on port 3000, use back tics for temp string\n app.listen(PORT, () => console.log(`Server is running on port: http://localhost:${PORT}`))\n \n-//install nodemod \n+//install nodemod to update changes as they happen without refreshing console \n+\n"
+                },
+                {
+                    "date": 1653595008005,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,5 +16,5 @@\n //tell it to listen on port 3000, use back tics for temp string\n app.listen(PORT, () => console.log(`Server is running on port: http://localhost:${PORT}`))\n \n //install nodemod to update changes as they happen without refreshing console \n-\n+//npm install\n"
+                },
+                {
+                    "date": 1653595018389,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,5 +16,5 @@\n //tell it to listen on port 3000, use back tics for temp string\n app.listen(PORT, () => console.log(`Server is running on port: http://localhost:${PORT}`))\n \n //install nodemod to update changes as they happen without refreshing console \n-//npm install\n+//npm install --save--dev nodemon\n"
+                },
+                {
+                    "date": 1653595049124,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,5 +16,5 @@\n //tell it to listen on port 3000, use back tics for temp string\n app.listen(PORT, () => console.log(`Server is running on port: http://localhost:${PORT}`))\n \n //install nodemod to update changes as they happen without refreshing console \n-//npm install --save--dev nodemon\n+//npm install --save--dev nodemon, dev is used because its only for developement envir\n"
+                },
+                {
+                    "date": 1653595103422,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,5 +16,6 @@\n //tell it to listen on port 3000, use back tics for temp string\n app.listen(PORT, () => console.log(`Server is running on port: http://localhost:${PORT}`))\n \n //install nodemod to update changes as they happen without refreshing console \n-//npm install --save--dev nodemon, dev is used because its only for developement envir\n+//npm install --save-dev nodemon, dev is used because its only for developement enviornments\n+\n"
+                },
+                {
+                    "date": 1653595137482,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,6 +16,7 @@\n //tell it to listen on port 3000, use back tics for temp string\n app.listen(PORT, () => console.log(`Server is running on port: http://localhost:${PORT}`))\n \n //install nodemod to update changes as they happen without refreshing console \n-//npm install --save-dev nodemon, dev is used because its only for developement enviornments\n+//npm install --save-dev nodemon, dev is used because its only for developement enviornments, nobody is running the server\n \n+\n"
+                },
+                {
+                    "date": 1653595280045,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n //tell it to listen on port 3000, use back tics for temp string\n-app.listen(PORT, () => console.log(`Server is running on port: http://localhost:${PORT}`))\n+app.listen(PORT, () => console.log(`Server is running on port: https://localhost:${PORT}`))\n \n //install nodemod to update changes as they happen without refreshing console \n //npm install --save-dev nodemon, dev is used because its only for developement enviornments, nobody is running the server\n \n"
+                },
+                {
+                    "date": 1653595285352,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n //tell it to listen on port 3000, use back tics for temp string\n-app.listen(PORT, () => console.log(`Server is running on port: https://localhost:${PORT}`))\n+app.listen(PORT, () => console.log(`Server is running on port: http://localhost:${PORT}`))\n \n //install nodemod to update changes as they happen without refreshing console \n //npm install --save-dev nodemon, dev is used because its only for developement enviornments, nobody is running the server\n \n"
+                },
+                {
+                    "date": 1653637822701,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n //tell it to listen on port 3000, use back tics for temp string\n-app.listen(PORT, () => console.log(`Server is running on port: http://localhost:${PORT}`))\n+app.listen(PORT, () => console.log(`Server is running on port: https://localhost:${PORT}`))\n \n //install nodemod to update changes as they happen without refreshing console \n //npm install --save-dev nodemon, dev is used because its only for developement enviornments, nobody is running the server\n \n"
+                },
+                {
+                    "date": 1653637845915,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n //tell it to listen on port 3000, use back tics for temp string\n-app.listen(PORT, () => console.log(`Server is running on port: https://localhost:${PORT}`))\n+app.listen(PORT, () => console.log(`Server is running on port: http://localhost:${PORT}`))\n \n //install nodemod to update changes as they happen without refreshing console \n //npm install --save-dev nodemon, dev is used because its only for developement enviornments, nobody is running the server\n \n"
+                },
+                {
+                    "date": 1653637879314,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,8 +12,10 @@\n \n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n+//\n+\n //tell it to listen on port 3000, use back tics for temp string\n app.listen(PORT, () => console.log(`Server is running on port: http://localhost:${PORT}`))\n \n //install nodemod to update changes as they happen without refreshing console \n"
+                },
+                {
+                    "date": 1653637886173,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n \n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n-//\n+//create routes\n \n //tell it to listen on port 3000, use back tics for temp string\n app.listen(PORT, () => console.log(`Server is running on port: http://localhost:${PORT}`))\n \n"
+                },
+                {
+                    "date": 1653637910796,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,10 @@\n \n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n-//create routes\n+//create routes \n+app.get();\n \n //tell it to listen on port 3000, use back tics for temp string\n app.listen(PORT, () => console.log(`Server is running on port: http://localhost:${PORT}`))\n \n"
+                },
+                {
+                    "date": 1653637917490,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n //create routes \n-app.get();\n+app.get('');\n \n //tell it to listen on port 3000, use back tics for temp string\n app.listen(PORT, () => console.log(`Server is running on port: http://localhost:${PORT}`))\n \n"
+                },
+                {
+                    "date": 1653637929062,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n //create routes \n-app.get('');\n+app.get('/', );\n \n //tell it to listen on port 3000, use back tics for temp string\n app.listen(PORT, () => console.log(`Server is running on port: http://localhost:${PORT}`))\n \n"
+                },
+                {
+                    "date": 1653637934471,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n //create routes \n-app.get('/', );\n+app.get('/', => );\n \n //tell it to listen on port 3000, use back tics for temp string\n app.listen(PORT, () => console.log(`Server is running on port: http://localhost:${PORT}`))\n \n"
+                },
+                {
+                    "date": 1653637941121,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n //create routes \n-app.get('/', => );\n+app.get('/', ()=> );\n \n //tell it to listen on port 3000, use back tics for temp string\n app.listen(PORT, () => console.log(`Server is running on port: http://localhost:${PORT}`))\n \n"
+                },
+                {
+                    "date": 1653637947622,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n //create routes \n-app.get('/', ()=> );\n+app.get('/', (req, res)=> );\n \n //tell it to listen on port 3000, use back tics for temp string\n app.listen(PORT, () => console.log(`Server is running on port: http://localhost:${PORT}`))\n \n"
+                },
+                {
+                    "date": 1653637961313,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,10 +13,13 @@\n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n //create routes \n-app.get('/', (req, res)=> );\n+//\n+app.get('/', (req, res) => {\n \n+} );\n+\n //tell it to listen on port 3000, use back tics for temp string\n app.listen(PORT, () => console.log(`Server is running on port: http://localhost:${PORT}`))\n \n //install nodemod to update changes as they happen without refreshing console \n"
+                },
+                {
+                    "date": 1653637967421,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n //create routes \n-//\n+//this will get\n app.get('/', (req, res) => {\n \n } );\n \n"
+                },
+                {
+                    "date": 1653637975417,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n //create routes \n-//this will get\n+//this will route to root or home folder\n app.get('/', (req, res) => {\n \n } );\n \n"
+                },
+                {
+                    "date": 1653637981111,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,10 @@\n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n //create routes \n-//this will route to root or home folder\n+//this will route to root or home folder, \n+\n app.get('/', (req, res) => {\n \n } );\n \n"
+                },
+                {
+                    "date": 1653637991310,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n app.use(bodyParser.json())\n \n //create routes \n //this will route to root or home folder, \n-\n+//testing with console.log(')\n app.get('/', (req, res) => {\n \n } );\n \n"
+                },
+                {
+                    "date": 1653638008358,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n app.use(bodyParser.json())\n \n //create routes \n //this will route to root or home folder, \n-//testing with console.log(')\n+//testing with console.log('IT IS ROUTING TO HOME FOLDER')\n app.get('/', (req, res) => {\n \n } );\n \n"
+                },
+                {
+                    "date": 1653638025423,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n app.use(bodyParser.json())\n \n //create routes \n //this will route to root or home folder, \n-//testing with console.log('IT IS ROUTING TO HOME FOLDER')\n+//testing with console.log('IT IS ROUTING TO HOME FOLDER') - to show in terminal\n app.get('/', (req, res) => {\n \n } );\n \n"
+                },
+                {
+                    "date": 1653638036642,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,10 @@\n app.use(bodyParser.json())\n \n //create routes \n //this will route to root or home folder, \n-//testing with console.log('IT IS ROUTING TO HOME FOLDER') - to show in terminal\n+//test: with console.log('IT IS ROUTING TO HOME FOLDER') - to show in terminal\n+//test: \n app.get('/', (req, res) => {\n \n } );\n \n"
+                },
+                {
+                    "date": 1653638048979,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n \n //create routes \n //this will route to root or home folder, \n //test: with console.log('IT IS ROUTING TO HOME FOLDER') - to show in terminal\n-//test: \n+//test: res.send('')\n app.get('/', (req, res) => {\n \n } );\n \n"
+                },
+                {
+                    "date": 1653638055815,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n \n //create routes \n //this will route to root or home folder, \n //test: with console.log('IT IS ROUTING TO HOME FOLDER') - to show in terminal\n-//test: res.send('')\n+//test: res.send('Welcome to the Home Page')\n app.get('/', (req, res) => {\n \n } );\n \n"
+                },
+                {
+                    "date": 1653638068023,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n \n //create routes \n //this will route to root or home folder, \n //test: with console.log('IT IS ROUTING TO HOME FOLDER') - to show in terminal\n-//test: res.send('Welcome to the Home Page')\n+//test: res.send('Welcome to the Home Page') - to show in browser\n app.get('/', (req, res) => {\n \n } );\n \n"
+                },
+                {
+                    "date": 1653638079914,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n \n //create routes \n //this will route to root or home folder, \n //test: with console.log('IT IS ROUTING TO HOME FOLDER') - to show in terminal\n-//test: res.send('Welcome to the Home Page') - to show in browser\n+//test: res.send('Welcome to the Home Page'); - to show in browser\n app.get('/', (req, res) => {\n \n } );\n \n"
+                },
+                {
+                    "date": 1653638097058,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,12 +14,12 @@\n app.use(bodyParser.json())\n \n //create routes \n //this will route to root or home folder, \n-//test: with console.log('IT IS ROUTING TO HOME FOLDER') - to show in terminal\n+//test: with console.log('IT IS ROUTING TO HOME FOLDER');  - to show in terminal\n //test: res.send('Welcome to the Home Page'); - to show in browser\n app.get('/', (req, res) => {\n-\n+    \n } );\n \n //tell it to listen on port 3000, use back tics for temp string\n app.listen(PORT, () => console.log(`Server is running on port: http://localhost:${PORT}`))\n"
+                },
+                {
+                    "date": 1653638109123,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,11 @@\n //this will route to root or home folder, \n //test: with console.log('IT IS ROUTING TO HOME FOLDER');  - to show in terminal\n //test: res.send('Welcome to the Home Page'); - to show in browser\n app.get('/', (req, res) => {\n-    \n+    console.log('IT IS ROUTING TO HOME FOLDER');\n+\n+    res.send('Welcome to the Home Page');\n } );\n \n //tell it to listen on port 3000, use back tics for temp string\n app.listen(PORT, () => console.log(`Server is running on port: http://localhost:${PORT}`))\n"
+                },
+                {
+                    "date": 1653638130122,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n //this will route to root or home folder, \n //test: with console.log('IT IS ROUTING TO HOME FOLDER');  - to show in terminal\n //test: res.send('Welcome to the Home Page'); - to show in browser\n app.get('/', (req, res) => {\n-    console.log('IT IS ROUTING TO HOME FOLDER');\n+    console.log('[IT IS ROUTING TO HOME FOLDER');\n \n     res.send('Welcome to the Home Page');\n } );\n \n"
+                },
+                {
+                    "date": 1653638141552,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n //this will route to root or home folder, \n //test: with console.log('IT IS ROUTING TO HOME FOLDER');  - to show in terminal\n //test: res.send('Welcome to the Home Page'); - to show in browser\n app.get('/', (req, res) => {\n-    console.log('[IT IS ROUTING TO HOME FOLDER');\n+    console.log('[IT IS ROUTING TO THE HOME FOLDER]');\n \n     res.send('Welcome to the Home Page');\n } );\n \n"
+                },
+                {
+                    "date": 1653638184363,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n \n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n-//create routes \n+//create routes\n //this will route to root or home folder, \n //test: with console.log('IT IS ROUTING TO HOME FOLDER');  - to show in terminal\n //test: res.send('Welcome to the Home Page'); - to show in browser\n app.get('/', (req, res) => {\n"
+                },
+                {
+                    "date": 1653638213182,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,14 +12,14 @@\n \n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n-//create routes\n+//create routes, using get request\n //this will route to root or home folder, \n //test: with console.log('IT IS ROUTING TO HOME FOLDER');  - to show in terminal\n //test: res.send('Welcome to the Home Page'); - to show in browser\n app.get('/', (req, res) => {\n-    console.log('[IT IS ROUTING TO THE HOME FOLDER]');\n+    //console.log('[IT IS ROUTING TO THE HOME FOLDER]');\n \n     res.send('Welcome to the Home Page');\n } );\n \n"
+                },
+                {
+                    "date": 1653638220844,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,8 @@\n //test: with console.log('IT IS ROUTING TO HOME FOLDER');  - to show in terminal\n //test: res.send('Welcome to the Home Page'); - to show in browser\n app.get('/', (req, res) => {\n     //console.log('[IT IS ROUTING TO THE HOME FOLDER]');\n-\n     res.send('Welcome to the Home Page');\n } );\n \n //tell it to listen on port 3000, use back tics for temp string\n"
+                },
+                {
+                    "date": 1653638230277,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n //test: res.send('Welcome to the Home Page'); - to show in browser\n app.get('/', (req, res) => {\n     //console.log('[IT IS ROUTING TO THE HOME FOLDER]');\n     res.send('Welcome to the Home Page');\n-} );\n+});\n \n //tell it to listen on port 3000, use back tics for temp string\n app.listen(PORT, () => console.log(`Server is running on port: http://localhost:${PORT}`))\n \n"
+                },
+                {
+                    "date": 1653638256542,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n \n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n-//create routes, using get request\n+//MARK: - create routes, using get request\n //this will route to root or home folder, \n //test: with console.log('IT IS ROUTING TO HOME FOLDER');  - to show in terminal\n //test: res.send('Welcome to the Home Page'); - to show in browser\n app.get('/', (req, res) => {\n"
+                },
+                {
+                    "date": 1653638266328,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n \n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n-//MARK: - create routes, using get request\n+//MARK: - create routes, using get\n //this will route to root or home folder, \n //test: with console.log('IT IS ROUTING TO HOME FOLDER');  - to show in terminal\n //test: res.send('Welcome to the Home Page'); - to show in browser\n app.get('/', (req, res) => {\n"
+                },
+                {
+                    "date": 1653638271395,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n \n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n-//MARK: - create routes, using get\n+//MARK: - create routes, using get, post,\n //this will route to root or home folder, \n //test: with console.log('IT IS ROUTING TO HOME FOLDER');  - to show in terminal\n //test: res.send('Welcome to the Home Page'); - to show in browser\n app.get('/', (req, res) => {\n"
+                },
+                {
+                    "date": 1653638276957,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n \n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n-//MARK: - create routes, using get, post,\n+//MARK: - create routes, using get, post, get by id, \n //this will route to root or home folder, \n //test: with console.log('IT IS ROUTING TO HOME FOLDER');  - to show in terminal\n //test: res.send('Welcome to the Home Page'); - to show in browser\n app.get('/', (req, res) => {\n"
+                },
+                {
+                    "date": 1653638284114,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,10 @@\n \n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n-//MARK: - create routes, using get, post, get by id, \n+//MARK: - create routes, using get, post, get by id, delete, patch request \n+\n //this will route to root or home folder, \n //test: with console.log('IT IS ROUTING TO HOME FOLDER');  - to show in terminal\n //test: res.send('Welcome to the Home Page'); - to show in browser\n app.get('/', (req, res) => {\n"
+                },
+                {
+                    "date": 1653638298461,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,8 @@\n //this will route to root or home folder, \n //test: with console.log('IT IS ROUTING TO HOME FOLDER');  - to show in terminal\n //test: res.send('Welcome to the Home Page'); - to show in browser\n app.get('/', (req, res) => {\n-    //console.log('[IT IS ROUTING TO THE HOME FOLDER]');\n     res.send('Welcome to the Home Page');\n });\n \n //tell it to listen on port 3000, use back tics for temp string\n"
+                },
+                {
+                    "date": 1653638312276,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,10 +17,9 @@\n \n //this will route to root or home folder, \n //test: with console.log('IT IS ROUTING TO HOME FOLDER');  - to show in terminal\n //test: res.send('Welcome to the Home Page'); - to show in browser\n-app.get('/', (req, res) => {\n-    res.send('Welcome to the Home Page');\n+app.get('/', (req, res) => { res.send('Welcome to the Home Page');\n });\n \n //tell it to listen on port 3000, use back tics for temp string\n app.listen(PORT, () => console.log(`Server is running on port: http://localhost:${PORT}`))\n"
+                },
+                {
+                    "date": 1653638350592,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n \n //this will route to root or home folder, \n //test: with console.log('IT IS ROUTING TO HOME FOLDER');  - to show in terminal\n //test: res.send('Welcome to the Home Page'); - to show in browser\n-app.get('/', (req, res) => { res.send('Welcome to the Home Page');\n+app.get('/', (req, res) => res.send('Welcome to the Home Page');\n });\n \n //tell it to listen on port 3000, use back tics for temp string\n app.listen(PORT, () => console.log(`Server is running on port: http://localhost:${PORT}`))\n"
+                }
+            ],
+            "date": 1653594147667,
+            "name": "Commit-0",
+            "content": "//using express inside this file \n"
+        }
+    ]
+}

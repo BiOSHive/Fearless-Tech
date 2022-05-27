@@ -1,0 +1,58 @@
+{
+    "sourceFile": "package.json",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 10,
+            "patches": [
+                {
+                    "date": 1653594326118,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1653594331514,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n   \"name\": \"fearless-tech\",\n   \"version\": \"1.0.0\",\n   \"description\": \"\",\n   \"main\": \"index.js\",\n-  \n+  \"type\":\n   \"scripts\": {\n     \"test\": \"echo \\\"Error: no test specified\\\" && exit 1\"\n   },\n   \"repository\": {\n"
+                },
+                {
+                    "date": 1653594337226,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n   \"name\": \"fearless-tech\",\n   \"version\": \"1.0.0\",\n   \"description\": \"\",\n   \"main\": \"index.js\",\n-  \"type\":\n+  \"type\": \"module\",\n   \"scripts\": {\n     \"test\": \"echo \\\"Error: no test specified\\\" && exit 1\"\n   },\n   \"repository\": {\n"
+                },
+                {
+                    "date": 1653595154317,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n   \"description\": \"\",\n   \"main\": \"index.js\",\n   \"type\": \"module\",\n   \"scripts\": {\n-    \"test\": \"echo \\\"Error: no test specified\\\" && exit 1\"\n+    \"start\": \"echo \\\"Error: no test specified\\\" && exit 1\"\n   },\n   \"repository\": {\n     \"type\": \"git\",\n     \"url\": \"git+https://github.com/BiOSHive/Fearless-Tech.git\"\n@@ -19,6 +19,9 @@\n   },\n   \"homepage\": \"https://github.com/BiOSHive/Fearless-Tech#readme\",\n   \"dependencies\": {\n     \"express\": \"^4.18.1\"\n+  },\n+  \"devDependencies\": {\n+    \"nodemon\": \"^2.0.16\"\n   }\n }\n"
+                },
+                {
+                    "date": 1653595161992,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n   \"description\": \"\",\n   \"main\": \"index.js\",\n   \"type\": \"module\",\n   \"scripts\": {\n-    \"start\": \"echo \\\"Error: no test specified\\\" && exit 1\"\n+    \"start\": \n   },\n   \"repository\": {\n     \"type\": \"git\",\n     \"url\": \"git+https://github.com/BiOSHive/Fearless-Tech.git\"\n"
+                },
+                {
+                    "date": 1653595170095,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n   \"description\": \"\",\n   \"main\": \"index.js\",\n   \"type\": \"module\",\n   \"scripts\": {\n-    \"start\": \n+    \"start\": \"nodemon index.js\"\n   },\n   \"repository\": {\n     \"type\": \"git\",\n     \"url\": \"git+https://github.com/BiOSHive/Fearless-Tech.git\"\n"
+                },
+                {
+                    "date": 1653595177768,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n   \"description\": \"\",\n   \"main\": \"index.js\",\n   \"type\": \"module\",\n   \"scripts\": {\n-    \"start\": \"nodemon index.js\"\n+    \"start\": \"nodemon index.js\" //this will allow \n   },\n   \"repository\": {\n     \"type\": \"git\",\n     \"url\": \"git+https://github.com/BiOSHive/Fearless-Tech.git\"\n"
+                },
+                {
+                    "date": 1653595186610,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n   \"description\": \"\",\n   \"main\": \"index.js\",\n   \"type\": \"module\",\n   \"scripts\": {\n-    \"start\": \"nodemon index.js\" //this will allow \n+    \"start\": \"nodemon index.js\" //this will allow nodemon to update the index.js app in real time\n   },\n   \"repository\": {\n     \"type\": \"git\",\n     \"url\": \"git+https://github.com/BiOSHive/Fearless-Tech.git\"\n"
+                },
+                {
+                    "date": 1653595193254,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,7 +21,7 @@\n   \"dependencies\": {\n     \"express\": \"^4.18.1\"\n   },\n   \"devDependencies\": {\n-    \"nodemon\": \"^2.0.16\"\n+    \"nodemon\": \"^2.0.16\" //nodemon installed \n   }\n }\n"
+                },
+                {
+                    "date": 1653595249941,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,7 +21,7 @@\n   \"dependencies\": {\n     \"express\": \"^4.18.1\"\n   },\n   \"devDependencies\": {\n-    \"nodemon\": \"^2.0.16\" //nodemon installed \n+    \"nodemon\": \"^2.0.16\" \n   }\n }\n"
+                },
+                {
+                    "date": 1653595260054,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n   \"description\": \"\",\n   \"main\": \"index.js\",\n   \"type\": \"module\",\n   \"scripts\": {\n-    \"start\": \"nodemon index.js\" //this will allow nodemon to update the index.js app in real time\n+    \"start\": \"nodemon index.js\" //this will allow nodemon to update t\n   },\n   \"repository\": {\n     \"type\": \"git\",\n     \"url\": \"git+https://github.com/BiOSHive/Fearless-Tech.git\"\n"
+                }
+            ],
+            "date": 1653594326118,
+            "name": "Commit-0",
+            "content": "{\n  \"name\": \"fearless-tech\",\n  \"version\": \"1.0.0\",\n  \"description\": \"\",\n  \"main\": \"index.js\",\n  \n  \"scripts\": {\n    \"test\": \"echo \\\"Error: no test specified\\\" && exit 1\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/BiOSHive/Fearless-Tech.git\"\n  },\n  \"keywords\": [],\n  \"author\": \"\",\n  \"license\": \"ISC\",\n  \"bugs\": {\n    \"url\": \"https://github.com/BiOSHive/Fearless-Tech/issues\"\n  },\n  \"homepage\": \"https://github.com/BiOSHive/Fearless-Tech#readme\",\n  \"dependencies\": {\n    \"express\": \"^4.18.1\"\n  }\n}\n"
+        }
+    ]
+}

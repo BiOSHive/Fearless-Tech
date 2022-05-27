@@ -1,6 +1,0 @@
-//create server to listen on port 3000 
-//install required library http to start server
-
-const http = require("http") 
-//tells server what 
-const prot = 3000 
