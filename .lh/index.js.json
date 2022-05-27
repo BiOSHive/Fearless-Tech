@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 76,
+            "activePatchIndex": 99,
             "patches": [
                 {
                     "date": 1653594147667,
@@ -312,6 +312,98 @@
                 {
                     "date": 1653638350592,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n \n //this will route to root or home folder, \n //test: with console.log('IT IS ROUTING TO HOME FOLDER');  - to show in terminal\n //test: res.send('Welcome to the Home Page'); - to show in browser\n-app.get('/', (req, res) => { res.send('Welcome to the Home Page');\n+app.get('/', (req, res) => res.send('Welcome to the Home Page');\n });\n \n //tell it to listen on port 3000, use back tics for temp string\n app.listen(PORT, () => console.log(`Server is running on port: http://localhost:${PORT}`))\n"
+                },
+                {
+                    "date": 1653640015810,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n //using express inside this file \n //npm install --save express (in terminal )\n import express from 'express';\n import bodyParser from 'body-parser';\n+import\n \n-\n //initial express app\n const app = express();\n \n //specify port of app \n@@ -17,10 +17,9 @@\n \n //this will route to root or home folder, \n //test: with console.log('IT IS ROUTING TO HOME FOLDER');  - to show in terminal\n //test: res.send('Welcome to the Home Page'); - to show in browser\n-app.get('/', (req, res) => res.send('Welcome to the Home Page');\n-});\n+app.get('/', (req, res) => res.send('Welcome to the Home Page'));\n \n //tell it to listen on port 3000, use back tics for temp string\n app.listen(PORT, () => console.log(`Server is running on port: http://localhost:${PORT}`))\n \n"
+                },
+                {
+                    "date": 1653640025421,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n //using express inside this file \n //npm install --save express (in terminal )\n import express from 'express';\n import bodyParser from 'body-parser';\n-import\n+import itemsRoutes from \n \n //initial express app\n const app = express();\n \n"
+                },
+                {
+                    "date": 1653640033302,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n //using express inside this file \n //npm install --save express (in terminal )\n import express from 'express';\n import bodyParser from 'body-parser';\n-import itemsRoutes from \n+import itemsRoutes from './'\n \n //initial express app\n const app = express();\n \n"
+                },
+                {
+                    "date": 1653640043970,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n //using express inside this file \n //npm install --save express (in terminal )\n import express from 'express';\n import bodyParser from 'body-parser';\n-import itemsRoutes from './'\n+import itemsRoutes from './routes'\n \n //initial express app\n const app = express();\n \n"
+                },
+                {
+                    "date": 1653640052149,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n //using express inside this file \n //npm install --save express (in terminal )\n import express from 'express';\n import bodyParser from 'body-parser';\n-import itemsRoutes from './routes'\n+import itemsRoutes from './routes/items'\n \n //initial express app\n const app = express();\n \n"
+                },
+                {
+                    "date": 1653640057250,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n //using express inside this file \n //npm install --save express (in terminal )\n import express from 'express';\n import bodyParser from 'body-parser';\n-import itemsRoutes from './routes/items'\n+import itemsRoutes from './routes/items.js'\n \n //initial express app\n const app = express();\n \n"
+                },
+                {
+                    "date": 1653640140014,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,11 @@\n //using express inside this file \n //npm install --save express (in terminal )\n import express from 'express';\n import bodyParser from 'body-parser';\n-import itemsRoutes from './routes/items.js'\n \n+import itemsRoutes from './routes/items.js';\n+\n //initial express app\n const app = express();\n \n //specify port of app \n"
+                },
+                {
+                    "date": 1653640148037,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n //using express inside this file \n //npm install --save express (in terminal )\n import express from 'express';\n import bodyParser from 'body-parser';\n-\n+//named it itemsRoute\n import itemsRoutes from './routes/items.js';\n \n //initial express app\n const app = express();\n"
+                },
+                {
+                    "date": 1653640156714,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n //using express inside this file \n //npm install --save express (in terminal )\n import express from 'express';\n import bodyParser from 'body-parser';\n-//named it itemsRoute\n+//named it itemsRoutes in\n import itemsRoutes from './routes/items.js';\n \n //initial express app\n const app = express();\n"
+                },
+                {
+                    "date": 1653640163863,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n //using express inside this file \n //npm install --save express (in terminal )\n import express from 'express';\n import bodyParser from 'body-parser';\n-//named it itemsRoutes in\n+//named it itemsRoutes imported items.js file\n import itemsRoutes from './routes/items.js';\n \n //initial express app\n const app = express();\n"
+                },
+                {
+                    "date": 1653640176957,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n //using express inside this file \n //npm install --save express (in terminal )\n import express from 'express';\n import bodyParser from 'body-parser';\n+\n //named it itemsRoutes imported items.js file\n import itemsRoutes from './routes/items.js';\n \n //initial express app\n@@ -13,8 +14,9 @@\n \n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n+\n //MARK: - create routes, using get, post, get by id, delete, patch request \n \n //this will route to root or home folder, \n //test: with console.log('IT IS ROUTING TO HOME FOLDER');  - to show in terminal\n"
+                },
+                {
+                    "date": 1653640184121,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,9 @@\n \n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n+app.use\n \n //MARK: - create routes, using get, post, get by id, delete, patch request \n \n //this will route to root or home folder, \n"
+                },
+                {
+                    "date": 1653640196368,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n \n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n-app.use\n+app.use('/')\n \n //MARK: - create routes, using get, post, get by id, delete, patch request \n \n //this will route to root or home folder, \n"
+                },
+                {
+                    "date": 1653640204038,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n \n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n-app.use('/')\n+app.use('/items', )\n \n //MARK: - create routes, using get, post, get by id, delete, patch request \n \n //this will route to root or home folder, \n"
+                },
+                {
+                    "date": 1653640210962,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n \n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n-app.use('/items', )\n+app.use('/items', itemsRoutes);\n \n //MARK: - create routes, using get, post, get by id, delete, patch request \n \n //this will route to root or home folder, \n"
+                },
+                {
+                    "date": 1653640237480,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,9 @@\n \n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n+//\n app.use('/items', itemsRoutes);\n \n //MARK: - create routes, using get, post, get by id, delete, patch request \n \n"
+                },
+                {
+                    "date": 1653640273384,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n \n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n-//\n+//to access items\n app.use('/items', itemsRoutes);\n \n //MARK: - create routes, using get, post, get by id, delete, patch request \n \n"
+                },
+                {
+                    "date": 1653640278907,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,10 +14,10 @@\n \n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n-//to access items\n-app.use('/items', itemsRoutes);\n+//to access items file\n+app.use('/it/ems', itemsRoutes);\n \n //MARK: - create routes, using get, post, get by id, delete, patch request \n \n //this will route to root or home folder, \n"
+                },
+                {
+                    "date": 1653640284053,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n //to access items file\n-app.use('/it/ems', itemsRoutes);\n+app.use('/', itemsRoutes);\n \n //MARK: - create routes, using get, post, get by id, delete, patch request \n \n //this will route to root or home folder, \n"
+                },
+                {
+                    "date": 1653640307760,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n \n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n-//to access items file\n+//to access items file, all routes in this \n app.use('/', itemsRoutes);\n \n //MARK: - create routes, using get, post, get by id, delete, patch request \n \n"
+                },
+                {
+                    "date": 1653640313570,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n \n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n-//to access items file, all routes in this \n+//to access items file, all routes in this file start with /items\n app.use('/', itemsRoutes);\n \n //MARK: - create routes, using get, post, get by id, delete, patch request \n \n"
+                },
+                {
+                    "date": 1653640324737,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n \n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n-//to access items file, all routes in this file start with /items\n+//to access items file, all routes in this file start with /items, that why i used /\n app.use('/', itemsRoutes);\n \n //MARK: - create routes, using get, post, get by id, delete, patch request \n \n"
+                },
+                {
+                    "date": 1653640358178,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,13 +14,12 @@\n \n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n-//to access items file, all routes in this file start with /items, that why i used /\n+//to access items file, all routes in this file start with /items, that why i used only /\n app.use('/', itemsRoutes);\n \n //MARK: - create routes, using get, post, get by id, delete, patch request \n-\n //this will route to root or home folder, \n //test: with console.log('IT IS ROUTING TO HOME FOLDER');  - to show in terminal\n //test: res.send('Welcome to the Home Page'); - to show in browser\n app.get('/', (req, res) => res.send('Welcome to the Home Page'));\n"
                 }
             ],
             "date": 1653594147667,

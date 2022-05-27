@@ -15,11 +15,11 @@ const PORT = 3000;
 //this says that use json data within the body of the app 
 app.use(bodyParser.json())
 
-//to access items file, all routes in this file start with /items, that why i used only /
+//to access items file, all routes in this 
 app.use('/', itemsRoutes);
 
-
 //MARK: - create routes, using get, post, get by id, delete, patch request 
+
 //this will route to root or home folder, 
 //test: with console.log('IT IS ROUTING TO HOME FOLDER');  - to show in terminal
 //test: res.send('Welcome to the Home Page'); - to show in browser
