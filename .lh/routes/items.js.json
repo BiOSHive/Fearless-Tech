@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 6,
+            "activePatchIndex": 7,
             "patches": [
                 {
                     "date": 1653639805986,
@@ -32,6 +32,10 @@
                 {
                     "date": 1653639863202,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,5 +2,5 @@\n \n //initial router\n const router = express.Router();\n \n-router.get\n\\ No newline at end of file\n+router.get()\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1653657848802,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n });\n \n //adding items to database above \n //downloaded postman to test out post request\n-//http://localhost:3000/\n+//http://localhost:3000/ \n router.post('/', (req, res) => {\n     console.log('POST Route completed'); //for terminal \n     \n     res.send('post route reached Updated'); //for client side \n"
                 }
             ],
             "date": 1653639805986,

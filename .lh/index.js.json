@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 99,
+            "activePatchIndex": 136,
             "patches": [
                 {
                     "date": 1653594147667,
@@ -404,6 +404,154 @@
                 {
                     "date": 1653640358178,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,13 +14,12 @@\n \n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n-//to access items file, all routes in this file start with /items, that why i used /\n+//to access items file, all routes in this file start with /items, that why i used only /\n app.use('/', itemsRoutes);\n \n //MARK: - create routes, using get, post, get by id, delete, patch request \n-\n //this will route to root or home folder, \n //test: with console.log('IT IS ROUTING TO HOME FOLDER');  - to show in terminal\n //test: res.send('Welcome to the Home Page'); - to show in browser\n app.get('/', (req, res) => res.send('Welcome to the Home Page'));\n"
+                },
+                {
+                    "date": 1653640830468,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,16 +9,17 @@\n //initial express app\n const app = express();\n \n //specify port of app \n-const PORT = 3000;\n+const PORT = 5000;\n \n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n //to access items file, all routes in this file start with /items, that why i used only /\n app.use('/', itemsRoutes);\n \n+\n //MARK: - create routes, using get, post, get by id, delete, patch request \n //this will route to root or home folder, \n //test: with console.log('IT IS ROUTING TO HOME FOLDER');  - to show in terminal\n //test: res.send('Welcome to the Home Page'); - to show in browser\n"
+                },
+                {
+                    "date": 1653640903715,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,9 @@\n //initial express app\n const app = express();\n \n //specify port of app \n+//to update port change number here\n const PORT = 5000;\n \n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n"
+                },
+                {
+                    "date": 1653640955657,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n //test: res.send('Welcome to the Home Page'); - to show in browser\n app.get('/', (req, res) => res.send('Welcome to the Home Page'));\n \n //tell it to listen on port 3000, use back tics for temp string\n-app.listen(PORT, () => console.log(`Server is running on port: http://localhost:${PORT}`))\n+app.listen(PORT, () => console.log(`Server is running on port: http://localhost:${PORT}`));\n \n //install nodemod to update changes as they happen without refreshing console \n //npm install --save-dev nodemon, dev is used because its only for developement enviornments, nobody is running the server\n \n"
+                },
+                {
+                    "date": 1653640978937,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n //test: res.send('Welcome to the Home Page'); - to show in browser\n app.get('/', (req, res) => res.send('Welcome to the Home Page'));\n \n //tell it to listen on port 3000, use back tics for temp string\n-app.listen(PORT, () => console.log(`Server is running on port: http://localhost:${PORT}`));\n+app.listen(PORT, () => console.log(`Server is running on port: http://localhost:${PORT}`))\n \n //install nodemod to update changes as they happen without refreshing console \n //npm install --save-dev nodemon, dev is used because its only for developement enviornments, nobody is running the server\n \n"
+                },
+                {
+                    "date": 1653640992321,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n const app = express();\n \n //specify port of app \n //to update port change number here\n-const PORT = 5000;\n+const PORT = 3000;\n \n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n"
+                },
+                {
+                    "date": 1653641008950,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n //initial express app\n const app = express();\n \n //specify port of app \n-//to update port change number here\n+//to update port change number here \n const PORT = 3000;\n \n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n"
+                },
+                {
+                    "date": 1653641047719,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n const app = express();\n \n //specify port of app \n //to update port change number here \n-const PORT = 3000;\n+const PORT = 3000; \n \n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n"
+                },
+                {
+                    "date": 1653641076158,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n const app = express();\n \n //specify port of app \n //to update port change number here \n-const PORT = 3000; \n+const PORT = 5000; \n \n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n"
+                },
+                {
+                    "date": 1653641311533,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n const app = express();\n \n //specify port of app \n //to update port change number here \n-const PORT = 5000; \n+const PORT = 5000 \n \n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n"
+                },
+                {
+                    "date": 1653641317698,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n const app = express();\n \n //specify port of app \n //to update port change number here \n-const PORT = 5000 \n+const PORT = 5000 && node \n \n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n"
+                },
+                {
+                    "date": 1653641323738,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n const app = express();\n \n //specify port of app \n //to update port change number here \n-const PORT = 5000 && node \n+const PORT = 5000 && node inde\n \n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n"
+                },
+                {
+                    "date": 1653641330486,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n const app = express();\n \n //specify port of app \n //to update port change number here \n-const PORT = 5000 && node inde\n+const PORT = 5000 && node index.js\n \n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n"
+                },
+                {
+                    "date": 1653641358791,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n const app = express();\n \n //specify port of app \n //to update port change number here \n-const PORT = 5000 && node index.js\n+const PORT = 3000 && node index.js;\n \n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n"
+                },
+                {
+                    "date": 1653641385616,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n const app = express();\n \n //specify port of app \n //to update port change number here \n-const PORT = 3000 && node index.js;\n+set PORT = 3000 && node index.js;\n \n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n"
+                },
+                {
+                    "date": 1653641392021,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n const app = express();\n \n //specify port of app \n //to update port change number here \n-set PORT = 3000 && node index.js;\n+set PORT = 3000;\n \n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n"
+                },
+                {
+                    "date": 1653641398168,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n const app = express();\n \n //specify port of app \n //to update port change number here \n-set PORT = 3000;\n+con PORT = 3000;\n \n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n"
+                },
+                {
+                    "date": 1653641740697,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n const app = express();\n \n //specify port of app \n //to update port change number here \n-con PORT = 3000;\n+set PORT = 3000;\n \n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n"
+                },
+                {
+                    "date": 1653641747498,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n const app = express();\n \n //specify port of app \n //to update port change number here \n-set PORT = 3000;\n+set PORT = 3000 && ind;\n \n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n"
+                },
+                {
+                    "date": 1653641757482,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n const app = express();\n \n //specify port of app \n //to update port change number here \n-set PORT = 3000 && ind;\n+set PORT = 3000 && index.js;\n \n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n"
+                },
+                {
+                    "date": 1653641769764,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n const app = express();\n \n //specify port of app \n //to update port change number here \n-set PORT = 3000 && index.js;\n+set PORT = 3000 && node index.js;\n \n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n"
+                },
+                {
+                    "date": 1653641787432,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,9 @@\n const app = express();\n \n //specify port of app \n //to update port change number here \n+set PORT\n set PORT = 3000 && node index.js;\n \n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n"
+                },
+                {
+                    "date": 1653641794420,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n const app = express();\n \n //specify port of app \n //to update port change number here \n-set PORT\n+set PORT = 3000;\n set PORT = 3000 && node index.js;\n \n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n"
+                },
+                {
+                    "date": 1653641802246,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,8 +12,9 @@\n //specify port of app \n //to update port change number here \n set PORT = 3000;\n set PORT = 3000 && node index.js;\n+set NODE_ENV = in\n \n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n"
+                },
+                {
+                    "date": 1653641807547,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n //specify port of app \n //to update port change number here \n set PORT = 3000;\n set PORT = 3000 && node index.js;\n-set NODE_ENV = in\n+set NODE_ENV = index.js\n \n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n"
+                },
+                {
+                    "date": 1653641880874,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,8 @@\n const app = express();\n \n //specify port of app \n //to update port change number here \n-set PORT = 3000;\n set PORT = 3000 && node index.js;\n set NODE_ENV = index.js\n \n //this says that use json data within the body of the app \n"
+                },
+                {
+                    "date": 1653641887281,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,10 +10,9 @@\n const app = express();\n \n //specify port of app \n //to update port change number here \n-set PORT = 3000 && node index.js;\n-set NODE_ENV = index.js\n+SET PORT = 3000 && node index.js;\n \n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n"
+                },
+                {
+                    "date": 1653641955775,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n const app = express();\n \n //specify port of app \n //to update port change number here \n-SET PORT = 3000 && node index.js;\n+set PORT = 3000 && node index.js;\n \n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n"
+                },
+                {
+                    "date": 1653641974732,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n const app = express();\n \n //specify port of app \n //to update port change number here \n-set PORT = 3000 && node index.js;\n+set PORT = 3000;\n \n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n"
+                },
+                {
+                    "date": 1653641990003,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n const app = express();\n \n //specify port of app \n //to update port change number here \n-set PORT = 3000;\n+const PORT = 3000;\n \n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n"
+                },
+                {
+                    "date": 1653641996099,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n const app = express();\n \n //specify port of app \n //to update port change number here \n-const PORT = 3000;\n+const PORT = 5000;\n \n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n"
+                },
+                {
+                    "date": 1653642016101,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n const app = express();\n \n //specify port of app \n //to update port change number here \n-const PORT = 5000;\n+const PORT = 6000;\n \n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n"
+                },
+                {
+                    "date": 1653642130998,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n const app = express();\n \n //specify port of app \n //to update port change number here \n-const PORT = 6000;\n+const PORT = 5000;\n \n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n"
+                },
+                {
+                    "date": 1653642228659,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n const app = express();\n \n //specify port of app \n //to update port change number here \n-const PORT = 5000;\n+const PORT = 3000;\n \n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n"
+                },
+                {
+                    "date": 1653642246658,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,8 @@\n //initial express app\n const app = express();\n \n //specify port of app \n-//to update port change number here \n const PORT = 3000;\n \n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n"
+                },
+                {
+                    "date": 1653642254711,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n \n //initial express app\n const app = express();\n \n-//specify port of app \n+//specify port for  app \n const PORT = 3000;\n \n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n"
+                },
+                {
+                    "date": 1653644759115,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n \n //initial express app\n const app = express();\n \n-//specify port for  app \n+//specify port for app  to run on\n const PORT = 3000;\n \n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n@@ -22,9 +22,9 @@\n //MARK: - create routes, using get, post, get by id, delete, patch request \n //this will route to root or home folder, \n //test: with console.log('IT IS ROUTING TO HOME FOLDER');  - to show in terminal\n //test: res.send('Welcome to the Home Page'); - to show in browser\n-app.get('/', (req, res) => res.send('Welcome to the Home Page'));\n+app.get('/', (req, res) => {res.send('Welcome to the Home Page'));\n \n //tell it to listen on port 3000, use back tics for temp string\n app.listen(PORT, () => console.log(`Server is running on port: http://localhost:${PORT}`))\n \n"
+                },
+                {
+                    "date": 1653654288906,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n //MARK: - create routes, using get, post, get by id, delete, patch request \n //this will route to root or home folder, \n //test: with console.log('IT IS ROUTING TO HOME FOLDER');  - to show in terminal\n //test: res.send('Welcome to the Home Page'); - to show in browser\n-app.get('/', (req, res) => {res.send('Welcome to the Home Page'));\n+app.get('/', (req, res) => res.send('Welcome to the Home Page')});\n \n //tell it to listen on port 3000, use back tics for temp string\n app.listen(PORT, () => console.log(`Server is running on port: http://localhost:${PORT}`))\n \n"
                 }
             ],
             "date": 1653594147667,
