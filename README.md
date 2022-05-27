@@ -80,5 +80,15 @@ inside postman download version(not web)
 - making these changes may require I change or update the routes and controllers folder, the functions and add in new files and modules
 
 
-##CODE ERRORS TO BE FIXED
-*Docker file path 
+## DOCKER SETUP 
+*Docker file path - dockerfile fixed 
+*use this command to fix docker file errors, it compiled fine 
+
+#creating container with all files
+ docker build -f DockerFile . 
+ 
+ #naming container myapp
+ docker build -f DockerFile -t myapp .
+ 
+ #running the myapp with docker 
+ docker run myapp 
