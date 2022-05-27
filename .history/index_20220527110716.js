@@ -10,7 +10,7 @@ import itemsRoutes from './routes/items.js';
 const app = express();
 
 //specify port for app  to run on
-let PORT = 3000;
+let PORT = 5000;
 
 //this says that use json data within the body of the app 
 app.use(bodyParser.json())
@@ -23,7 +23,7 @@ app.use('/', itemsRoutes);
 //this will route to root or home folder, 
 //test: with console.log('IT IS ROUTING TO HOME FOLDER');  - to show in terminal
 //test: res.send('Welcome to the Home Page'); - to show in browser
-app.get('/', (req, res) => res.send('Welcome to the Purple Cow Project! '));
+app.get('/', (req, res) => res.send('Welcome to the Home Page'));
 
 //tell it to listen on port 3000, use back tics for temp string
 app.listen(PORT, () => console.log(`Server is running on port: http://localhost:${PORT}`))

@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 137,
+            "activePatchIndex": 140,
             "patches": [
                 {
                     "date": 1653594147667,
@@ -556,6 +556,18 @@
                 {
                     "date": 1653662223662,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n //initial express app\n const app = express();\n \n //specify port for app  to run on\n-const PORT = 3000;\n+let PORT = 3000;\n \n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n@@ -22,9 +22,9 @@\n //MARK: - create routes, using get, post, get by id, delete, patch request \n //this will route to root or home folder, \n //test: with console.log('IT IS ROUTING TO HOME FOLDER');  - to show in terminal\n //test: res.send('Welcome to the Home Page'); - to show in browser\n-app.get('/', (req, res) => res.send('Welcome to the Home Page')});\n+app.get('/', (req, res) => res.send('Welcome to the Home Page'));\n \n //tell it to listen on port 3000, use back tics for temp string\n app.listen(PORT, () => console.log(`Server is running on port: http://localhost:${PORT}`))\n \n"
+                },
+                {
+                    "date": 1653664036066,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n //initial express app\n const app = express();\n \n //specify port for app  to run on\n-let PORT = 3000;\n+let PORT = 5000;\n \n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n"
+                },
+                {
+                    "date": 1653664046586,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n //initial express app\n const app = express();\n \n //specify port for app  to run on\n-let PORT = 5000;\n+let PORT = 3000;\n \n //this says that use json data within the body of the app \n app.use(bodyParser.json())\n \n"
+                },
+                {
+                    "date": 1653664364765,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n //MARK: - create routes, using get, post, get by id, delete, patch request \n //this will route to root or home folder, \n //test: with console.log('IT IS ROUTING TO HOME FOLDER');  - to show in terminal\n //test: res.send('Welcome to the Home Page'); - to show in browser\n-app.get('/', (req, res) => res.send('Welcome to the Home Page'));\n+app.get('/', (req, res) => res.send('Welcome to the Purple Cow Project'));\n \n //tell it to listen on port 3000, use back tics for temp string\n app.listen(PORT, () => console.log(`Server is running on port: http://localhost:${PORT}`))\n \n"
                 }
             ],
             "date": 1653594147667,

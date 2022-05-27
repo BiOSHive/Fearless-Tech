@@ -1,6 +1,4 @@
 import express from 'express';
-//* this import statement will be added later when I refactor my code, this line can be removed
-//import {createItem, getItems, updateItem } from ' ../controllers/items.js'; 
 
 //adding UUID
 import { v4 as uuidv4 } from 'uuid';
@@ -54,7 +52,7 @@ router.delete('/:id', (req, res) => {
     //if true it will keep item in the array, if it is false it will remove item from array 
     cubbyItems = cubbyItems.filter((item) => item.id != id);
 
-    res.send(`item with the id: ${id} was deleted from the database`);
+    res.send(`item with the id: ${id} was deleted from the database`)
 });
 
 //to update part of user information using PATCH,
@@ -67,13 +65,16 @@ router.patch('/:id', (req, res) => {
 
     //user can update the following within the brackets 
     const{ itemName, quantity, childsName } = req.body;
-
-    // if statements to allow of items to be updated 
-    if (childsName) updatedItem.childsName = childsName;
-    if (itemName) updatedItem.itemName = itemName;
-    if (quantity) updatedItem.quantity = quantity;
+    // if statement to allow of items to be updated 
+    if (childsName) item.childsName = childsName;
     
-    res.send(`User with id: ${id}, has been updated.`);
+
+    if (itemName)  item.itemName = itemName;
+
+    if (quantity) {
+        item.quantity = quantity;
+    }
+
 });
 
 //export so that i can use in index.js file 

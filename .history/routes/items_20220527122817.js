@@ -1,6 +1,4 @@
 import express from 'express';
-//* this import statement will be added later when I refactor my code, this line can be removed
-//import {createItem, getItems, updateItem } from ' ../controllers/items.js'; 
 
 //adding UUID
 import { v4 as uuidv4 } from 'uuid';
@@ -59,7 +57,7 @@ router.delete('/:id', (req, res) => {
 
 //to update part of user information using PATCH,
 // PUT is used when you want to overwrite everything
-router.patch('/:id', (req, res) => {
+router.patch('./: id', (req, res) => {
     const { id } = req.params; // this is data being sent from front end/postman is the frontend for now
 
         // to upate an item in the database 
@@ -69,9 +67,9 @@ router.patch('/:id', (req, res) => {
     const{ itemName, quantity, childsName } = req.body;
 
     // if statements to allow of items to be updated 
-    if (childsName) updatedItem.childsName = childsName;
-    if (itemName) updatedItem.itemName = itemName;
-    if (quantity) updatedItem.quantity = quantity;
+    if (childsName) item.childsName = childsName;
+    if (itemName) item.itemName = itemName;
+    if (quantity) item.quantity = quantity;
     
     res.send(`User with id: ${id}, has been updated.`);
 });

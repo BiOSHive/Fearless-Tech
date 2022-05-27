@@ -1,0 +1,46 @@
+{
+    "sourceFile": "controllers/items.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 7,
+            "patches": [
+                {
+                    "date": 1653669345658,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1653669356223,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-//will create \n\\ No newline at end of file\n+//will create functions to clean up my routers folder \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1653669363086,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-//will create functions to clean up my routers folder \n\\ No newline at end of file\n+//will create functions to clean up my routers folder for the items.js file \n"
+                },
+                {
+                    "date": 1653669373064,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-//will create functions to clean up my routers folder for the items.js file \n+//will export create functions to clean up my routers folder for the items.js file \n"
+                },
+                {
+                    "date": 1653669649064,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,2 @@\n-//will export create functions to clean up my routers folder for the items.js file \n+//will export functions to clean up my routers folder for the items.js file \n+// import { v4 as uuidv4 } from 'uuid';\n"
+                },
+                {
+                    "date": 1653669802956,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,3 @@\n+\n //will export functions to clean up my routers folder for the items.js file \n // import { v4 as uuidv4 } from 'uuid';\n"
+                },
+                {
+                    "date": 1653669811295,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n-\n+//this file will hold all the logic for the routes \n //will export functions to clean up my routers folder for the items.js file \n // import { v4 as uuidv4 } from 'uuid';\n"
+                },
+                {
+                    "date": 1653669817273,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,4 @@\n-//this file will hold all the logic for the routes \n+//this file will hold all the logic for the routes functions\n+\n //will export functions to clean up my routers folder for the items.js file \n // import { v4 as uuidv4 } from 'uuid';\n"
+                }
+            ],
+            "date": 1653669345658,
+            "name": "Commit-0",
+            "content": "//will create "
+        }
+    ]
+}

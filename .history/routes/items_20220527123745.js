@@ -1,6 +1,5 @@
 import express from 'express';
-//* this import statement will be added later when I refactor my code, this line can be removed
-//import {createItem, getItems, updateItem } from ' ../controllers/items.js'; 
+//import {createUser} from '.../controllers/items'; * this will be added later when I refactor my code
 
 //adding UUID
 import { v4 as uuidv4 } from 'uuid';
