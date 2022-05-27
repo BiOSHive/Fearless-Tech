@@ -74,3 +74,8 @@ inside postman download version(not web)
 - hit send
 - once its successful you will see this message: "User with id: 53993d39-bb0d-4a1b-bcd1-dbe99409b020, has been updated."
  
+## FUTURE UPDATES AND CHANGES
+*ASSUMPTIONS THAT MAY AFFECT THE CHANGES TO COME
+- will build out the frontend using HTML, CSS with react 
+- making these changes may require I change or update the routes and controllers folder, the functions and add in new files and modules
+
