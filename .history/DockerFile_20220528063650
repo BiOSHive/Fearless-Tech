@@ -1,0 +1,15 @@
+FROM node:15
+
+RUN mkdir -p /Desktop/FearlessTech
+
+WORKDIR /Desktop/FearlessTech
+
+COPY package.json /Desktop/FearlessTech/
+
+RUN npm install
+
+COPY /Desktop/FearlessTech
+
+EXPOSE 3000
+
+CMD ["npm", "start"]

@@ -1,0 +1,15 @@
+FROM node:15
+
+RUN mkdir -p  /Users/meishavernell/Desktop/FearlessTech/DockerFile
+
+WORKDIR  /Users/meishavernell/Desktop/FearlessTech/DockerFile
+
+COPY package.json 
+
+RUN npm install
+
+COPY . Desktop/FearlessTech
+
+EXPOSE 3000
+
+CMD ["npm", "start"]
