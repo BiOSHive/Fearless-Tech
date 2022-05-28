@@ -84,7 +84,7 @@ inside postman download version(not web)
 *Docker file path - dockerfile fixed 
 *use this command to fix docker file errors, it compiled fine 
 
-#creating container with all files: 
+#creating image with docker: 
  docker build -f DockerFile . 
  
  #naming container myapp:
@@ -92,3 +92,6 @@ inside postman download version(not web)
  
  #running the myapp with docker:  
   -  docker run --publish 3000:3000 myapp
+
+#run app with docker:
+ - docker run myapp
