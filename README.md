@@ -91,4 +91,4 @@ inside postman download version(not web)
  docker build -f DockerFile -t myapp .
  
  #running the myapp with docker:  
- docker run myapp 
+  -  docker run --publish 3000:3000 myapp
